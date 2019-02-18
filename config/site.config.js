@@ -9,7 +9,7 @@ if (!ROOT) {
 
 const config = {
   // Your website's name, used for favicon meta tags
-  site_name: 'Backrow Bandits',
+  site_name: 'The 5 Digimen',
 
   // Your website's description, used for favicon meta tags
   site_description: 'Group Presentation Web App',
