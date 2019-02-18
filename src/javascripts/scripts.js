@@ -1,1 +1,7 @@
-// Add your scripts here
+const init = function () {
+
+  cssScrollSnapPolyfill()
+
+}
+
+init();

@@ -1,1 +1,74 @@
-// Add your styles here
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 2rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+@media (min-width:768px) {
+  body {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+  }
+  
+  section {
+    scroll-snap-align: start;
+  }
+}
+
+section:nth-child(3n) {
+  background: #16a085;
+}
+
+section:nth-child(3n+1) {
+  background: #27ae60;
+}
+
+section:nth-child(3n+2) {
+  background: #2980b9;
+}
+
+.row .col-md-6:nth-child(1) {
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .row .col-md-6:nth-child(1) {
+    text-align: right;
+  }
+}
+
+h1 {
+  font-size: calc(1rem + 3vw);
+  text-align: center;
+}
+
+h2 {
+  font-size: calc(1rem + 1.5vw);
+}
+
+h3 {
+  font-size: calc(1rem + 0.75vw);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+img.photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
